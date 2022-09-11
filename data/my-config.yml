@@ -1,0 +1,12 @@
+name: nakama-node-1
+data_dir: "./data/"
+
+console:
+    port: 7351
+    username: "my_user"
+    password: "my_password"
+
+# нужно указать в явном виде, иначе ошибки в логах видимо root@cockroachdb:26257 !== root@localhost:26257 из дефолтного конфига
+database:
+    address: 
+      - "root@cockroachdb:26257"
